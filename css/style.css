@@ -474,6 +474,7 @@
     border: none;
     margin-top: 15px;  
     transition-property: background-color;
+    
   }
   
   .subscribe-name {
@@ -773,4 +774,72 @@
     
   }  
   
+
+  /* Всплывающее окно */
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+  }
+
+  .form_popup {
+    display: flex;
+    
+  }
+
+  .popup_field {
+    background: url(../svg/form-arrows.svg) #f9f9f9 no-repeat center right 10px;
+    background-size: 10px;
+  }
+
+  .form_popup {
+    display: flex;
+    flex-direction: column;
+  }
   
+  .field-label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .form-group:nth-child(n+2) {
+    margin-top: 40px;
+
+  }
+
+  .message {
+    height: 200px;
+    padding: 20px;
+    resize: none;
+  }
+
+  .send-button {    
+    font-family: Open Sans Bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  /* checkbox */
+
+  .checkbox-text::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../svg/form-circle.svg) no-repeat center center/20px;
+}
+  .checkbox {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+  }
+
+  .checkbox:checked + .checkbox-text::before {
+    background: url(../svg/form-empty-circle.svg) no-repeat center center/20px;
+  }
