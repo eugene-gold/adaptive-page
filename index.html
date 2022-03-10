@@ -688,7 +688,7 @@
             </footer>
           </div>         
           
-        </article>
+        </article>       
 
 
       </section>
@@ -734,8 +734,13 @@
             <form class="form__popup">
               <div class="form__group">
                 <label class="field-rate">
-                  <span class="field-label">Как часто вы заходите на сайт?</span>                 
-                    <input class="search-field popup_field" placeholder="Почти каждый день" required>             
+                  <span class="field-label">Как часто вы заходите на сайт?</span>
+                  <select class="search-field popup_field">
+                    <option value="everyday" selected>Почти каждый день</option>
+                    <option value="fewdays">Раз в несколько дней</option>
+                    <option value="fewweeks">Раз в несколько недель</option>
+                    <option value="timeyear">Несколько раз в год</option>
+                  </select>                   
                 </label>
               </div>
               <div class="form-group">
