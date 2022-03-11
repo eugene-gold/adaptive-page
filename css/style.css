@@ -967,9 +967,9 @@
 
   @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
     
-    .trend_container {          
+    /* .trend_container {          
       flex-wrap: nowrap;  
-    }
+    } */
   
     .trend_card {
       width: 25%;      
@@ -977,7 +977,12 @@
 
     .trend_card:nth-child(n+2) {
       margin-left: 0.25%;
-  }
+    }
+
+    .card__body {
+      padding: 5px;
+      margin: 5px;
+    }
     
   }
 
@@ -1000,6 +1005,15 @@
     
   }
 
+  @media (min-width: 920px) and (max-width: 1199px) {
+    
+    .card__body {      
+      margin: 0.9375rem 1.25rem;
+      padding: 1.75em;
+    }
+  
+  }
+
   @media (min-width: 641px) and (max-width: 1199px) {
     .header {
       background-image: url("../images/banner-bg-tablet.jpg");
@@ -1011,8 +1025,35 @@
       margin-top: 2.8125rem;
       margin-bottom: 2rem;
       
-  }
+    }
+    .main-title {      
+      
+      font-size: 1.125rem;
+    }
+
+    .link-title h3, .link-title h2, .product__content h3 {
+      font-size: 1.0625rem;
+    }
+
+    /* .link-title h2 {
+      font-size: 1.0625rem;
+    } */
+
+    .section-title h3 {
+      font-size: 0.875rem;
+    }
+
+    /* .card__body {      
+      margin: 0.9375rem 1.25rem;
+      padding: 1.75em;
+    } */
+
     
+    .header-title {
+      
+      font-size: 2.5rem;
+      
+    }
     
     /* .trend_card {
       width: 49.5%;
@@ -1053,9 +1094,9 @@
       margin-left: 30px;
     } */
 
-    .post-info {
+    /* .post-info {
       margin-left: 0;
-    }
+    } */
 
     /* .post-description {
       margin-top: 2rem;
@@ -1133,7 +1174,7 @@
   }
 
   @media (max-width: 640px) and (orientation: portrait) {
-    
+
     .trend_container {
       flex-wrap: wrap;
     }
