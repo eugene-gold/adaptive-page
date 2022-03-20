@@ -774,6 +774,10 @@
     font-size: 20px;
   }
 
+  .popup_title {
+    margin-bottom: 2.25rem;
+  }
+
   .popup_container {    
     width: 100%;
     min-height: 100%;
