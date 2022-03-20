@@ -219,6 +219,7 @@
   .post-category {  
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px;
   }  
   
   .post-category-item {
